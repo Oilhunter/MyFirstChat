@@ -1,8 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>My first chat</title>
+    <title>MyFirstChat</title>
+<style>
+input{
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 15px;
+    //margin-left: 10%;
+    width: 50%;
+    height: 10px;
+    border: 1px solid #DDDDDD;
+}
+</style>
 
     <!-- Подключение библиотеки jQuery-->
     <script
@@ -70,10 +81,12 @@
 </head>
 <body>
 <!-- Интерфейс: имя, окно чата, текст сообщения -->
-<b>Ваше Имя:</b>
-<input id="name" type="text" placeholder="Ваше имя"/>
-<br/>
-<input id="text" type="text" placeholder="Текст сообщения"/>
-<div id="chat_window"></div> <!-- окно чата -->
+    <div class="container">
+        <b>Ваше Имя:</b>
+    <input id="name" type="text" placeholder="Ваше имя"/>
+    </div>
+<br>
+    <input id="text" type="text" placeholder="Текст сообщения"/>
+    <div id="chat_window"></div> <!-- окно чата -->
 </body>
 </html>

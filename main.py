@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, url_for, request
 from datetime import datetime
 import json
 
@@ -38,7 +38,7 @@ def print_message(message):  # Объявляем функцию, которая
 # Главная страница
 @app.route('/')
 def index_page():
-    return 'Ас-саламу алейкум, вас приветствует Чат создный на Python'
+    return render_template('index.html')
 
 
 #  Показать все сообщения в формате JSON
